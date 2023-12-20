@@ -108,6 +108,9 @@ class DBhelper(private val context: Context) : SQLiteOpenHelper(context, DATABAS
         editor.apply()
     }
 
+    
+    
+
     fun getUserByEmail(email: String): User? {
         val db = this.readableDatabase
         val cursor = db.query(
@@ -125,3 +128,6 @@ class DBhelper(private val context: Context) : SQLiteOpenHelper(context, DATABAS
         }
     }
 }
+
+}
+
