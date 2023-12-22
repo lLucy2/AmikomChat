@@ -1,11 +1,11 @@
 package com.example.amikomchat
 
-import androidx.appcompat.app.AppCompatActivity
+import FragmentNews
+import  androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.amikomchat.fragment.FragmentChat
 import com.example.amikomchat.fragment.FragmentHome
-import com.example.amikomchat.fragment.FragmentNews
 import com.example.amikomchat.fragment.FragmentProfile
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

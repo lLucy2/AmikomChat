@@ -1,15 +1,19 @@
 package com.example.amikomchat.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 
 import com.example.amikomchat.R
+import com.example.amikomchat.RekCafe
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -54,6 +58,13 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
         imageList.add(SlideModel("https://home.amikom.ac.id/media/2020/01/HEAD.jpg"))
 
         imageSlider.setImageList(imageList, ScaleTypes.CENTER_INSIDE)
+
+        val btn_rekcafe = view.findViewById<ImageView>(R.id.menu5)
+        btn_rekcafe.setOnClickListener {
+            // Membuat dan memulai Intent ke aktivitas lain
+            val intent = Intent(context, RekCafe::class.java)
+            startActivity(intent)
+        }
     }
 
     companion object {
